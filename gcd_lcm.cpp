@@ -1,12 +1,9 @@
 typedef long long int lli;
 
 lli gcd(lli a, lli b){
-	if (a < b) swap(a, b);
-	if (b <= 0) return -1;
-
-	lli r = a % b;
-	if (r == 0) return b;
-	else return gcd(b, r);
+	if (b < 0) return -1;
+	if (b == 0) return a;
+	return gcd(b, a % b);
 }
 
 lli lcm(lli a, lli b){
