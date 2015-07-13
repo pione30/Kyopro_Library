@@ -3,6 +3,7 @@
 const int MAX_N = 262144; //2^18
 vector<int> bit(2 * MAX_N + 1);
 int n;
+// [1, n]
 
 int bit_sum(int i){
 	int s = 0;
