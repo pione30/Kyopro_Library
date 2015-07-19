@@ -14,10 +14,11 @@ using namespace std;
 typedef long long int lli;
 typedef vector<int> vi;
 typedef vector<double> vd;
+typedef vector<lli> vlli;
 typedef vector<vector<int>> vvi;
 typedef vector<vector<double>> vvd;
 
 int main(){
 
-	return 0;
+  return 0;
 }
