@@ -1,6 +1,6 @@
 typedef long long int lli;
 
-lli extgcd(lli a, lli b, lli& x lli& y){
+lli extgcd(lli a, lli b, lli& x, lli& y){
 	lli d = a;
 	if (b != 0){
 		d = extgcd(b, a % b, y, x);
