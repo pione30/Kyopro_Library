@@ -7,6 +7,7 @@
 #include <vector>
 #include <map>
 #include <set>
+#define _USE_MATH_DEFINES
 #include <cmath>
 #define rep(i, n) for(int (i) = 0; (i) < (int)(n); ++(i))
 #define rep1(i, n) for(int (i) = 1; (i) <= (int)(n); ++(i))
