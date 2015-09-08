@@ -9,22 +9,22 @@ void init(int N){
 	for (int i = 0; i < N; ++i) par[i] = i;
 }
 
-//–Ø‚Ìª‚ð‹‚ß‚é
+//æœ¨ã®æ ¹ã‚’æ±‚ã‚ã‚‹
 int find(int x){
 	if (par[x] == x){
 		return x;
 	}
 	else {
-		return par[x] = find(par[x]); //Œo˜Hˆ³k
+		return par[x] = find(par[x]); //çµŒè·¯åœ§ç¸®
 	}
 }
 
-// x‚Æy‚ª“¯‚¶ƒOƒ‹[ƒv‚É‘®‚·‚é‚©”Û‚©
+// xã¨yãŒåŒã˜ã‚°ãƒ«ãƒ¼ãƒ—ã«å±žã™ã‚‹ã‹å¦ã‹
 bool same(int x, int y){
 	return find(x) == find(y);
 }
 
-// x‚Æy‚Ì‘®‚·‚éƒOƒ‹[ƒv‚ð•¹‡
+// xã¨yã®å±žã™ã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½µåˆ
 void merge(int x, int y){
 	int px = find(x);
 	int py = find(y);
