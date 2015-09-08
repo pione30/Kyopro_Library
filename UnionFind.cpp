@@ -1,21 +1,21 @@
 int par[N*N] = {0};
 
-//–Ø‚Ìª‚ğ‹‚ß‚é
+//æœ¨ã®æ ¹ã‚’æ±‚ã‚ã‚‹
 int find(int x){
 	if (par[x] == x){
 		return x;
 	}
 	else {
-		return par[x] = find(par[x]); //Œo˜Hˆ³k
+		return par[x] = find(par[x]); //çµŒè·¯åœ§ç¸®
 	}
 }
 
-// x‚Æy‚ª“¯‚¶ƒOƒ‹[ƒv‚É‘®‚·‚é‚©”Û‚©
+// xã¨yãŒåŒã˜ã‚°ãƒ«ãƒ¼ãƒ—ã«å±ã™ã‚‹ã‹å¦ã‹
 bool same(int x, int y){
 	return find(x) == find(y);
 }
 
-// x‚Æy‚Ì‘®‚·‚éƒOƒ‹[ƒv‚ğ•¹‡
+// xã¨yã®å±ã™ã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½µåˆ
 void merge(int x, int y){
 	int px = find(x);
 	int py = find(y);
