@@ -5,6 +5,7 @@
 using namespace std;
 typedef complex<double> cmpd;
 
+// フーリエ逆変換した後はfの各要素をFFT_Nで割ること
 const int FFT_N = 262144; // 2^18
 enum fft_direction { fft_forward, fft_backward };
 
