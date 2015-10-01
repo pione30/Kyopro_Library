@@ -37,7 +37,7 @@ void bfs(int s){
 lli dfs(int v, int t, lli f){
   if(v == t) return f;
   for(int &i = iter[v]; i < G[v].size(); i++){
-    edge &e G[v][i];
+    edge &e = G[v][i];
     if(e.cap > 0 && level[v] < level[e.to]){
       lli d = dfs(e.to, t, min(f, e.cap));
       if(d > 0){
@@ -51,7 +51,7 @@ lli dfs(int v, int t, lli f){
 }
 
 // sからtへの最大流を求める
-lli max_flow(int s. int t){
+lli max_flow(int s, int t){
   lli flow = 0;
   for(;;){
     bfs(s);
