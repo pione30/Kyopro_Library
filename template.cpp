@@ -9,6 +9,7 @@ typedef vector<double> vd;
 typedef vector<lli> vlli;
 typedef vector<vector<int>> vvi;
 typedef vector<vector<double>> vvd;
+// typedef pair<int, int> P;
 
 int main(){
 
