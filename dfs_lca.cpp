@@ -1,4 +1,4 @@
-/* dfs(���D��T��)��lca(�ŏ����ʑc��)�Ɋւ��郉�C�u���� */
+/* dfs(深さ優先探索)とlca(最小共通祖先)に関するライブラリ */
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -25,6 +25,7 @@ void dfs(int v, int p, int d)
 	}
 	return;
 }
+
 void init()
 {
 	dfs(root, -1, 0);
@@ -38,6 +39,7 @@ void init()
 	}
 	return;
 }
+
 int lca(int u,int v)
 {
 	if(depth[u] > depth[v])swap(u,v);
