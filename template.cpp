@@ -3,10 +3,10 @@
 #define rep1(i, n) for(int (i) = 1; (i) <= (int)(n); ++(i))
 #define all(a) (a).begin(),(a).end()
 using namespace std;
-typedef long long int lli;
+typedef long long int ll;
 typedef vector<int> vi;
 typedef vector<double> vd;
-typedef vector<lli> vlli;
+typedef vector<ll> vll;
 typedef vector<vector<int>> vvi;
 typedef vector<vector<double>> vvd;
 // typedef pair<int, int> P;
