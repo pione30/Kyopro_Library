@@ -1,5 +1,12 @@
+const int INF = 0x3fffffff;
 const int MAX_N = 100;
-vvi D(MAX_N, vi(MAX_N));
+vvi D(MAX_N, vi(MAX_N, INF));
+
+int N;
+
+void init(){
+  for(int i = 0; i < N; i++) D[i][i] = 0;
+}
 
 void warshall_floyd(){
 	for (int k = 0; k < N; ++k)
