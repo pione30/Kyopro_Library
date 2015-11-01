@@ -3,6 +3,7 @@
 #define rep1(i, n) for(int (i) = 1; (i) <= (int)(n); ++(i))
 #define rrep(i, n) for(int (i) = (n) - 1; (i) >= 0; --(i))
 #define all(a) (a).begin(),(a).end()
+#define PB push_back
 using namespace std;
 typedef long long int ll;
 typedef vector<int> vi;
