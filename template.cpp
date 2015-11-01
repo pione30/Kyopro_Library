@@ -12,6 +12,7 @@ typedef vector<ll> vll;
 typedef vector<vector<int>> vvi;
 typedef vector<vector<double>> vvd;
 // typedef pair<int, int> P;
+const int INF = 0x7fffffff;
 const ll divisor = 1000000007;
 
 int main(){
