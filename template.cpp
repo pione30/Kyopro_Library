@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
-#define rep(i, n) for(int (i) = 0; (i) < (int)(n); ++(i))
-#define rep1(i, n) for(int (i) = 1; (i) <= (int)(n); ++(i))
+#define FOR(i, a, b) for(int (i) = (a); (i) <= (b); ++(i))
+#define rep(i, n) FOR(i, 0, n - 1)
+#define rep1(i, n) FOR(i, 1, n)
 #define rrep(i, n) for(int (i) = (n) - 1; (i) >= 0; --(i))
 #define all(a) (a).begin(),(a).end()
 #define PB push_back
