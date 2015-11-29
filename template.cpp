@@ -5,13 +5,18 @@
 #define all(a) (a).begin(),(a).end()
 #define PB push_back
 using namespace std;
-typedef long long int ll;
-typedef vector<int> vi;
-typedef vector<double> vd;
-typedef vector<ll> vll;
-typedef vector<vector<int>> vvi;
-typedef vector<vector<double>> vvd;
-// typedef pair<int, int> P;
+using ll = long long int;
+using vb = vector<bool>;
+using vi = vector<int>;
+using vd = vector<double>;
+using vll = vector<ll>;
+using vvb = vector<vb>;
+using vvi = vector<vi>;
+using vvd = vector<vd>;
+using vvll = vector<vll>;
+using vvvi = vector<vvi>;
+using vvvd = vector<vvd>;
+// using P = pair<int, int>;
 const int INF = 0x7fffffff;
 const ll divisor = 1000000007;
 
