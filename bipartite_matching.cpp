@@ -1,7 +1,8 @@
-int V = 1000;
-vi G[V];              // グラフの隣接リスト表現 
-vi match(V);          // マッチングのペア
-vector<bool> used(V); // DFSですでに調べたかのグラフ
+const int MAX_V = 1000;
+int V;
+vi G[MAX_V];              // グラフの隣接リスト表現 
+vi match(MAX_V);          // マッチングのペア
+vector<bool> used(MAX_V); // DFSですでに調べたかのグラフ
 
 void add_edge(int u, int v){
   G[u].PB(v);
