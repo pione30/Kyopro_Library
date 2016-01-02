@@ -33,11 +33,12 @@ void init(){
 }
 
 int lca(int u,int v){
-  if(depth[u] > depth[v])swap(u,v);
+  if(depth[u] > depth[v]) swap(u,v);
   for(int i = MAX_LOG_V - 1; i >= 0; --i){
     if((depth[v] - depth[u]) >> i) v = parent[i][v];
   }
-  if(u == v)return u;
+  if(u == v) return u;
+
   for(int i = MAX_LOG_V - 1; i >= 0; --i){
     if(parent[i][u] != parent[i][v]){
       u = parent[i][u];
