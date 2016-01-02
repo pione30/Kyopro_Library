@@ -20,7 +20,6 @@ void dfs(int v, int p, int d){
       dfs(g[v][i], v, d+1);
     }
   }
-  return;
 }
 
 void init(){
@@ -31,7 +30,6 @@ void init(){
       else parent[i + 1][v] = parent[i][parent[i][v]];
     }
   }
-  return;
 }
 
 int lca(int u,int v){
