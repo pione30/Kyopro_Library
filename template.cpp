@@ -22,7 +22,14 @@ const int INF = 0x7fffffff;
 // const ll INF = 0x3fffffffffffffff;
 const ll divisor = 1000000007;
 
-int main(){
+void mainmain(){
 
+}
+
+int main(){
+  cin.tie(0);
+  ios::sync_with_stdio(false);
+  // cout << fixed << setprecision(15);
+  mainmain();
   return 0;
 }
