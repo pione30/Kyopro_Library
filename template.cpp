@@ -19,6 +19,7 @@ using vvvi = vector<vvi>;
 using vvvd = vector<vvd>;
 // using P = pair<int, int>;
 const int INF = 0x7fffffff;
+// const ll INF = 0x3fffffffffffffff;
 const ll divisor = 1000000007;
 
 int main(){
