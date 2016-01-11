@@ -1,11 +1,11 @@
-typedef long long int lli;
+typedef long long int ll;
 
-lli gcd(lli a, lli b){
+ll gcd(ll a, ll b){
 	if (b < 0) return -1;
 	if (b == 0) return a;
 	return gcd(b, a % b);
 }
 
-lli lcm(lli a, lli b){
+ll lcm(ll a, ll b){
 	return a * b / gcd(a, b);
 }
